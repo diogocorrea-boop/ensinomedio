@@ -85,12 +85,28 @@
       padding: 15px;
       margin-top: 20px;
     }
+    .mapa-mental {
+      background-color: #444;
+      padding: 10px;
+      border-radius: 8px;
+      margin-top: 10px;
+      color: #fff;
+    }
+    .tema {
+      cursor: pointer;
+      color: #1db954;
+      font-weight: bold;
+    }
+    .conteudo {
+      display: none;
+      margin-top: 10px;
+    }
   </style>
 </head>
 <body>
 
 <header>
-  🌍 Geografia com Diogo Mendes Corrêa
+  🌍 Geografia com Diogo Mendes Corrêa | Escola Estadual Professor Zilda Pinheiro da Silva
 </header>
 
 <nav>
@@ -118,19 +134,15 @@
 <section id="ano1">
   <div class="card">
     <h2>1º Ano – Fundamentos e Meio Ambiente</h2>
-    <p>📚 Espaço geográfico, cartografia, coordenadas, relevo, clima, biomas, mineração em MG.  
-    Enquanto o professor de História fala de papiros, a gente explica GPS e fusos horários!</p>
-    <p>🎥 Vídeos: <a href="https://www.youtube.com/watch?v=XbX0f-3075E" target="_blank">Nerdologia - O que é Geografia?</a></p>
-    <p>🎧 Podcast: <a href="https://www.nexojornal.com.br/podcast" target="_blank">Nexo Jornal - Crise hídrica</a></p>
-    <div class="quiz">
-      <b>Quiz:</b> Qual linha divide a Terra em Hemisfério Norte e Sul?  
-      <ul>
-        <li>A) Meridiano de Greenwich</li>
-        <li>B) Trópico de Câncer</li>
-        <li>C) Equador ✅</li>
-        <li>D) Círculo Polar Ártico</li>
-      </ul>
+    <div class="tema" onclick="toggleConteudo('espaco')">📌 Espaço Geográfico e Cartografia</div>
+    <div id="espaco" class="conteudo">
+      <p>Texto resumido: "Enquanto o professor de História fala de papiros, a gente explica GPS e fusos horários!"</p>
+      <p>🎥 Vídeo: <a href="https://www.youtube.com/watch?v=XbX0f-3075E" target="_blank">Nerdologia - O que é Geografia?</a></p>
+      <p>🎧 Podcast: <a href="https://www.nexojornal.com.br/podcast" target="_blank">Nexo Jornal - Espaço geográfico</a></p>
+      <div class="mapa-mental">🗺️ Espaço → paisagem, lugar, região, território.</div>
+      <div class="quiz">Quiz: Qual conceito geográfico se refere ao espaço vivido e percebido afetivamente?<br>A) Paisagem<br>B) Região<br>C) Lugar ✅<br>D) Território</div>
     </div>
+    <!-- Repita para cada tema do 1º ano -->
   </div>
 </section>
 
@@ -138,19 +150,15 @@
 <section id="ano2">
   <div class="card">
     <h2>2º Ano – Campo, Indústria e Energia</h2>
-    <p>🌱 Estrutura fundiária, Revolução Verde, agronegócio, agricultura familiar, êxodo rural, industrialização, matriz energética.  
-    Enquanto o professor de História fala de sesmarias, a gente explica o MST e os conflitos atuais!</p>
-    <p>🎥 Vídeos: <a href="https://www.youtube.com/watch?v=gLq4-gq0j30" target="_blank">A História das Coisas</a></p>
-    <p>🎧 Podcast: <a href="https://www.nexojornal.com.br/podcast" target="_blank">Questão da Terra</a></p>
-    <div class="quiz">
-      <b>Quiz:</b> Qual foi o principal objetivo da Revolução Verde?  
-      <ul>
-        <li>A) Reduzir o uso de agrotóxicos</li>
-        <li>B) Aumentar a produção de alimentos ✅</li>
-        <li>C) Promover agricultura orgânica</li>
-        <li>D) Diminuir a dependência de fertilizantes</li>
-      </ul>
+    <div class="tema" onclick="toggleConteudo('fundiaria')">📌 Estrutura Fundiária e Conflitos</div>
+    <div id="fundiaria" class="conteudo">
+      <p>Texto resumido: "Enquanto o professor de História fala de sesmarias, a gente explica o MST e os transgênicos."</p>
+      <p>🎥 Vídeo: <a href="https://www.youtube.com/watch?v=gLq4-gq0j30" target="_blank">A História das Coisas</a></p>
+      <p>🎧 Podcast: <a href="https://www.nexojornal.com.br/podcast" target="_blank">Questão da Terra</a></p>
+      <div class="mapa-mental">🗺️ Revolução Verde → sementes, fertilizantes, impactos.</div>
+      <div class="quiz">Quiz: Qual foi o principal objetivo da Revolução Verde?<br>A) Reduzir agrotóxicos<br>B) Aumentar produção ✅<br>C) Promover agricultura orgânica<br>D) Diminuir fertilizantes</div>
     </div>
+    <!-- Repita para cada tema do 2º ano -->
   </div>
 </section>
 
@@ -158,19 +166,15 @@
 <section id="ano3">
   <div class="card">
     <h2>3º Ano – Geopolítica e Sociedade</h2>
-    <p>🌐 Globalização, blocos econômicos, conflitos geopolíticos, migrações, população mundial e brasileira, racismo estrutural, crise climática, Agenda 2030.  
-    Enquanto o professor de História fala da Guerra Fria, a gente explica a multipolaridade de 2026!</p>
-    <p>🎥 Vídeos: <a href="https://www.youtube.com/watch?v=s0Q-t_h-18Q" target="_blank">Nerdologia - Globalização</a></p>
-    <p>🎧 Podcast: <a href="https://xadrezverbal.com/category/podcast/" target="_blank">Xadrez Verbal</a></p>
-    <div class="quiz">
-      <b>Quiz:</b> O Acordo de Paris tem como objetivo:  
-      <ul>
-        <li>A) Proibir totalmente emissões</li>
-        <li>B) Limitar aumento da temperatura global a 2°C ✅</li>
-        <li>C) Incentivar combustíveis fósseis</li>
-        <li>D) Expandir desmatamento</li>
-      </ul>
+    <div class="tema" onclick="toggleConteudo('globalizacao')">📌 Globalização e Blocos Econômicos</div>
+    <div id="globalizacao" class="conteudo">
+      <p>Texto resumido: "Enquanto o professor de História fala da Guerra Fria, a gente explica a multipolaridade e os BRICS."</p>
+      <p>🎥 Vídeo: <a href="https://www.youtube.com/watch?v=s0Q-t_h-18Q" target="_blank">Nerdologia - Globalização</a></p>
+      <p>🎧 Podcast: <a href="https://xadrezverbal.com/category/podcast/" target="_blank">Xadrez Verbal</a></p>
+      <div class="mapa-mental">🗺️ Globalização → fluxos, redes, atores.</div>
+      <div class="quiz">Quiz: Qual bloco econômico possui moeda única?<br>A) Mercosul<br>B) NAFTA<br>C) União Europeia ✅<br>D) APEC</div>
     </div>
+    <!-- Repita para cada tema do 3º ano -->
   </div>
 </section>
 
@@ -185,10 +189,4 @@
       <li>Caça ao País estilo "Onde está Wally?"</li>
     </ul>
   </div>
-</section>
-
-<!-- Mapas Mentais -->
-<section id="mapas">
-  <div class="card">
-    <h2>🗺️ Mapas Mentais Interativos</h2>
-    <p
+</
